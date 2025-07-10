@@ -1,0 +1,168 @@
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 0px;
+    justify-content: center;
+    padding:10px;
+    background-color:black;
+}
+
+.item-product{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Work Sans', sans-serif;  
+    position: relative;
+    display: block;
+    padding: 5px;
+    text-align: center;
+    overflow: hidden;
+    border-radius:10px;
+    filter: brightness(100%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.item-product:hover {
+    border-radius:10px;
+    cursor:pointer;
+    filter: brightness(50%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.item-product img {
+    border-radius:10px;
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.3s ease-in-out;
+    cursor:pointer;
+    object-fit:cover;
+    filter: blur(0px);
+    transform: scale(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.item-product:hover img {
+    cursor:pointer;
+    transform: scale(1.1);
+}
+
+.item-product::before,
+.item-product::after {
+    content: attr(data-name) " " attr(data-price);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2em;
+    letter-spacing:2px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1; 
+}
+
+.item-product:hover img {
+    cursor:pointer;
+}
+
+.item-product:hover::before,
+.item-product:hover::after {
+    opacity: 1;
+}
+
+.product-name{
+    font-family: 'Kalnia', serif;
+    font-family: 'Playfair Display', serif;
+    margin-left:80vh;
+    position:absolute;
+    bottom:60vh;
+    font-size:10vh;
+}
+
+.checked{
+    color: orange;
+  }
+
+.stars{
+    position:absolute;
+    margin-left:81vh;
+    bottom:65vh;
+}
+
+.rating{
+    position:absolute;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Work Sans', sans-serif;  
+    margin-left:94vh;
+    bottom:63.3vh;
+}
+
+.price{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Work Sans', sans-serif;
+    position:absolute;
+    bottom:57vh;
+    margin-left:81vh;
+    font-size:30px;
+    color:red;
+}
+
+.desc{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Work Sans', sans-serif;
+    position:absolute;
+    bottom:46vh;
+    margin-left:81vh;
+    text-align:justify;
+    border: solid;
+    border-top:solid #ebebeb;
+    border-left:none;
+    border-bottom:solid #ebebeb;
+    border-right:none;
+    padding:10px;
+}
+    
+.add{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Work Sans', sans-serif;
+    background:black;
+    padding:20px;
+    font-size:15px;
+    color:white;
+    position:absolute;
+    bottom:40vh;
+    left:81vh;
+}
+
+
+#favoriteagain{
+    height: 20px;
+    margin-left:96vh;
+    position:relative;
+    top:37vh;
+    transition: transform 0.3s ease;
+}
+
+#favoriteagain:hover{
+    cursor:pointer;
+    transform: scale(0.9);
+    opacity:0.9;
+}
+
+.wishlist{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Work Sans', sans-serif;
+    margin-left:100vh;
+    position:relative;
+    bottom:42vh;
+}
+
+.wholeproductpage{
+    position:relative;
+    top:20vh;
+}
+

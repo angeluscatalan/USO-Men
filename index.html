@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>USO Men | Your signature of Sophistication. </title>
+    <link rel="icon" href="USO ICON.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Work+Sans:ital,wght@0,200;0,400;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+
+    <!-- HEADER -->
+    <section class="header">
+        <div class="searchbar">
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="submit"><img id="searchicon" name="search" src="Search.png"></button>
+            </form>
+            <div class="product-list" id="searchResults"></div>
+        </div>
+        <div class="logo">
+            <a href="index.html"><img id="headlogo" src="Uso.png"></a>
+        </div>
+    
+        <div class="topright">
+            <a href = "login.html"><img id="user" src="User.png"></a>
+            <a href = "favorite.html"><img id="favorite" src="Favorite.png"></a>
+        </div>
+    </section>
+  
+    <!-- JS CODE SHOPPING BAG -->
+    <div class="cart-container">
+    </div>
+    <div class="cart">
+        <img id="bag" src="ShoppingBag.png">
+        <span>0</span> 
+    </div>
+
+    <div class="catalog">
+        <h1>Your Shopping Cart</h1>
+        <ul class="catalogCart"> </ul>
+        <div class="checkout"></div>
+            <div class="totalvalue">0</div>
+            <div class="closeCart">
+                <img src="x.png">
+            </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div class= "wholenavbar">
+        <div class="navbar">    
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Accesories.html">ACCESORIES</a></li>
+                <li><a href="Fashion.html">FASHION</a></li>
+                <li><a href="Fragrances.html">FRAGRANCES</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- HOME PAGE ANIMATION -->
+    <a href = "fashion.html" >
+        <video id="homepage" autoplay muted loop>
+            <source src="HOME PAGE.mp4" type="video/mp4">
+        </video>
+     </a>
+        
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-row">
+            <div class="footer-col">
+                <h4>Info</h4>
+                <ul class="links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul class="links">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Email Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Privacy Center</h4>
+                <ul class="links">
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>
+                    Subscribe to our newsletter for a weekly
+                    news, updates, and exclusive offers.
+                </p>
+                <form action="#">
+                    <input type="text" placeholder="Enter your email address" required>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+    </div>
+    <script src = "app.js"></script>
+</body>
+</html>
